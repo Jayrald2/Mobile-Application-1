@@ -1,2 +1,12 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+:root {
+    --ion-background-color: #ffffff;
+    --ion-text-color: #000000;
+    --ion-border-color: #dddddd;
+  }
+/* This is the default setting for Ionic's "solid" fill */
+:root {
+  --ion-item-background: #f0f0f5; /* Light gray background for filled inputs */
+  --ion-item-color: #000000; /* Text color (black) */
+}

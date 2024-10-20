@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form (ngSubmit)="onSubmit()">
+    <ion-input
+    [(ngModel)]="user.username" name="username" required
+    type="email"
+    fill="solid"
+    label="Email"
+    labelPlacement="floating"
+    errorText="Invalid Email"
+    ngModel
+    email
+  ></ion-input>
+  <ion-input
+  [(ngModel)]="user.password" name="password" type="password" required
+    type="password"
+    fill="solid"
+    label="Password"
+    labelPlacement="floating"
+    errorText="Invalid password"
+    ngModel
+   ></ion-input>
+    <ion-button  type="submit">Submit</ion-button>
+  </form>
+
+</ion-content>
+

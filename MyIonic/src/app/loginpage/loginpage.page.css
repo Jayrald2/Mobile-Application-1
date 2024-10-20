@@ -1,0 +1,27 @@
+ion-content {
+  --background: #ffffff; /* white background */
+}
+
+ion-card {
+  --background: #ffffff;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px #888888;
+}
+
+ion-card-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 5px 5px #888888;
+}
+
+.container ion-input {
+  --background: #ffffff;
+  --color:black;
+  display: flex;
+  width: 80%;
+  max-width: 400px;
+}/*# sourceMappingURL=loginpage.page.css.map */
