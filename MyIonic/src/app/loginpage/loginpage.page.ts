@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/model/user.model';
-import { AlertController } from '@ionic/angular'; 
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-loginpage',
   templateUrl: './loginpage.page.html',
   styleUrls: ['./loginpage.page.scss'],
 })
- 
+
 export class LoginpagePage{
 
   user: User;
@@ -18,12 +18,12 @@ export class LoginpagePage{
     // Initialize the user with default values
     this.user = new User('', '', '');
   }
-  
-  
+
+
   onSubmit() {
     if(this.user.username === this.staticUsername && this.staticPassword === this.staticPassword){
       console.log("Email: ", this.user.username);
-      console.log("Password: ", this.user.password);  
+      console.log("Password: ", this.user.password);
     }
 
     // Show alert or any other logic
