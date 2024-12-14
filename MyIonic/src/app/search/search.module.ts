@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 import { IonicModule } from '@ionic/angular';
-import { LoginpagePageRoutingModule } from './loginpage-routing.module';
-import { LoginpagePage } from './loginpage.page';
+
+import { SearchPageRoutingModule } from './search-routing.module';
+
+import { SearchPage } from './search.page';
 import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
@@ -11,12 +14,9 @@ import { ComponentsModule } from '../components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    LoginpagePageRoutingModule,
+    SearchPageRoutingModule,
     ComponentsModule
   ],
-  exports: [LoginpagePage],
-  declarations: [LoginpagePage]
+  declarations: [SearchPage]
 })
-export class LoginpagePageModule {
-
-}
+export class SearchPageModule {}

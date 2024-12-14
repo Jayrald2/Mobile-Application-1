@@ -1,9 +1,5 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Login Page</ion-title>
-  </ion-toolbar>
-</ion-header>
-<ion-content>
+<ion-content >
+  <app-menu></app-menu>
   <form (ngSubmit)="onSubmit()">
     <ion-input
     [(ngModel)]="user.username" name="username" required
@@ -24,6 +20,8 @@
     errorText="Invalid password"
     ngModel
    ></ion-input>
+   <div>
+   </div>
     <ion-button  type="submit">Submit</ion-button>
   </form>
 

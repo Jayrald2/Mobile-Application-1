@@ -1,0 +1,20 @@
+<ion-content>
+<app-menu></app-menu>
+  <ion-searchbar
+  [debounce]="1000"
+  (ionInput)="handleInput($event)"
+  placeholder="Search users (min 3 characters)">
+</ion-searchbar>
+
+<ion-list>
+  <ion-item *ngFor="let result of results">
+    <ion-label>{{ result.username }}</ion-label>
+  </ion-item>
+</ion-list>
+
+<ion-text *ngIf="results.length === 0" class="ion-text-center">
+  <p>No users found</p>
+</ion-text>
+</ion-content>
+
+

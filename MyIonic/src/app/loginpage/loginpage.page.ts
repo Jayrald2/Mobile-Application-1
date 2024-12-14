@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/model/user.model';
 import { AlertController } from '@ionic/angular';
-
+import { MenuController } from '@ionic/angular';
 @Component({
   selector: 'app-loginpage',
   templateUrl: './loginpage.page.html',
