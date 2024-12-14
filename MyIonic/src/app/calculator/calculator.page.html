@@ -2,18 +2,6 @@
 
 <ion-content [fullscreen]="true">
   <app-menu></app-menu>
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">calculator</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Calculator</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content (keyup)="onKeyPress($event)" tabindex="0">
   <div class="calculator">
     <!-- Display -->
